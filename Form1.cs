@@ -16,5 +16,12 @@ namespace SystemMonitor
         {
             InitializeComponent();
         }
+
+        private void processWatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessWatch pw = new ProcessWatch();
+            pw.Show();
+            this.Hide();
+        }
     }
 }
